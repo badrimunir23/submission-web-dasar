@@ -1,0 +1,344 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+/* Navigation */
+.navbar {
+    background-color: #13283C;
+    margin: 0;
+    padding: 20px 30px;
+}
+
+.logo {
+    font-size: 14pt;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tombol {
+    display: none;
+    color: white;
+    font-size: 14pt;
+}
+
+.tombol:hover {
+    cursor: pointer;
+}
+
+.menu {
+    margin: 0;
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.menu li {
+    padding-left: 0;
+    margin-right: 10px;
+}
+
+.menu li a {
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+}
+/* Jumbotron */
+.jumbotron {
+    flex: auto;
+    font-size: 20px;
+    text-align: center;
+}
+
+#company img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    object-position: center;
+    padding-bottom: 10px;
+}
+
+h2,
+h3 {
+    text-align: center;
+    padding: 10px;
+}
+
+.sub-bab {
+    box-shadow: 4px 12px 8px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+}
+
+main {
+    padding: 30px;
+    display: flex;
+    gap: 1.5rem;
+}
+
+article p {
+    text-align: justify;
+}
+
+#addition p {
+    text-align: center;
+}
+
+.aside p {
+    text-align: center;
+}
+
+
+
+/* Slide Product Image */
+
+.slide-container{
+    margin:auto;
+    max-width:1000px;
+    position:relative;
+}
+
+.mySlides{
+    display:none;
+}
+.next,.prev{
+    border-radius:0 3px 3px 0;
+    color:#fff;
+    cursor:pointer;
+    font-size:18px;
+    font-weight:700;
+    margin-top:-22px;
+    padding:16px;
+    position:absolute;
+    top:50%;
+    transition:.6s ease;
+    user-select:none;
+    width:auto;
+}
+.next{
+    border-radius:3px 0 0 3px;
+    right:0
+}
+.next:hover,.prev:hover{
+    background-color:rgba(0,0,0,.8)
+}
+.text{
+    bottom:8px;
+    font-size:15px;
+    text-align:center;
+    width:100%;
+}
+.number-text,.text{
+    color:#f2f2f2;
+    padding:8px 12px;
+    position:absolute
+}
+.number-text{
+    font-size:12px;
+    top:0
+}
+.dot{
+    background-color:#bbb;
+    border-radius:50%;
+    cursor:pointer;
+    display:inline-block;
+    height:15px;
+    margin:0 2px;
+    transition:background-color .6s ease;
+    width:15px
+}
+.active,.dot:hover{
+    background-color:#717171
+}
+.fade{
+    animation-duration:1.5s;
+    animation-name:fade
+}
+@keyframes fade{
+    0%{
+        opacity:.2
+    }
+    to{
+        opacity:1
+    }
+}
+
+
+/* Form Contact */
+
+form {
+    object-position: center;
+    font-size: 15px;
+    padding: 20px;
+    text-align: center;
+}
+
+input[type="text"],
+[type="email"] {
+    width: 60%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+textarea {
+    width: 60%;
+    padding: 10px;
+    margin: 10px;
+}
+
+input[type="submit"] {
+    width: 20%;
+    padding: 10px 18px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+/* Information Table */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 2px solid #ddd;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+section {
+    text-align: center;
+}
+
+th,
+td {
+    text-align: center;
+    padding: 16px;
+}
+
+
+/* Aside */
+aside {
+    text-align: center;
+}
+
+.aside {
+    flex-direction: column;
+    z-index: 1;
+}
+
+.profile img {
+    width: 250px;
+    border-radius: 50%;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #13283C;
+    color: aliceblue;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 5px
+}
+
+/* Icon Media Social */
+
+.med-sos ul li {
+    display: inline;
+    padding-top: 15px;
+}
+
+.med-sos li a {
+    font-size: 1.5rem;
+    transition: all .1s ease-in-out;
+}
+
+.med-sos ul {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+}
+
+footer .med-sos li a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: white;
+    transition: all .1s ease-in-out;
+}
+
+.med-sos ul li a:hover {
+    color: #89b0d9;
+}
+
+/* Mode Responsive */
+
+@media screen and (max-width: 1200px) {
+    main {
+        flex-flow: column nowrap;
+    }
+
+    main aside {
+        align-self: center;
+    }
+
+    .profile figcaption {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    main aside {
+        align-self: stretch;
+    }
+
+    /* .logo-header img {
+        display: none;
+    } */
+}
+
+@media screen and (max-width: 375px){
+    form {
+        flex-flow: column nowrap;
+    }
+}
+
+
+/* Media Query Baru */
+
+@media screen and (max-width:768px) {
+    .menu {
+        display: none;
+    }
+
+    .menu.aktif{
+        display: inline-block;
+        position: absolute;
+        top: 64px;
+        background: #13283C;
+        padding: 10px 20px;
+        right: 0;
+        left: 0;
+    }
+
+    .menu.aktif li a {
+        padding: 10px;
+        display: inline-block !important;
+    }
+
+    .tombol {
+        display: block;
+    }
+}
