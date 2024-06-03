@@ -63,7 +63,7 @@ body {
     text-align: center;
 }
 
-#company img {
+#about img {
     width: 100%;
     max-height: 400px;
     object-fit: cover;
@@ -93,7 +93,7 @@ article p {
     text-align: justify;
 }
 
-#addition p {
+#location p {
     text-align: center;
 }
 
