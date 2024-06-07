@@ -13,6 +13,9 @@ body {
     background-color: #13283C;
     margin: 0;
     padding: 20px 30px;
+    width: 100%;
+    position: fixed;
+    z-index: 99;
 }
 
 .logo {
@@ -97,6 +100,9 @@ article p {
     text-align: center;
 }
 
+.main, .aside {
+    margin-top: 3em;
+}
 .aside p {
     text-align: center;
 }
@@ -108,12 +114,13 @@ article p {
 .slide-container{
     margin:auto;
     max-width:1000px;
-    position:relative;
+    position: relative;
 }
 
 .mySlides{
     display:none;
 }
+
 .next,.prev{
     border-radius:0 3px 3px 0;
     color:#fff;
