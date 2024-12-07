@@ -10,7 +10,7 @@ body {
 
 /* Navigation */
 .navbar {
-    background-color: #13283C;
+    background-color: #016930;
     margin: 0;
     padding: 20px 30px;
     width: 100%;
@@ -58,6 +58,10 @@ body {
     color: white;
     text-decoration: none;
     display: inline-block;
+}
+
+.menu li a:hover {
+    color: #78eb0d;
 }
 /* Jumbotron */
 .jumbotron {
@@ -254,7 +258,7 @@ aside {
 /* Footer */
 
 footer {
-    background-color: #13283C;
+    background-color: #016930;
     color: aliceblue;
     text-align: center;
     padding: 20px;
@@ -287,7 +291,7 @@ footer .med-sos li a {
 }
 
 .med-sos ul li a:hover {
-    color: #89b0d9;
+    color: #78eb0d;
 }
 
 /* Mode Responsive */
@@ -316,9 +320,14 @@ footer .med-sos li a {
     } */
 }
 
-@media screen and (max-width: 375px){
+@media screen and (max-width: 390px){
     form {
         flex-flow: column nowrap;
+    }
+    input[type="submit"]{
+        width: 25%;
+        text-align: center;
+        padding: 2px;
     }
 }
 
@@ -334,7 +343,7 @@ footer .med-sos li a {
         display: inline-block;
         position: absolute;
         top: 64px;
-        background: #13283C;
+        background: #016930;
         padding: 10px 20px;
         right: 0;
         left: 0;
