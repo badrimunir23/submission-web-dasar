@@ -314,10 +314,6 @@ footer .med-sos li a {
     main aside {
         align-self: stretch;
     }
-
-    /* .logo-header img {
-        display: none;
-    } */
 }
 
 @media screen and (max-width: 390px){
